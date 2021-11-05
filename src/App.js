@@ -1,16 +1,19 @@
 import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './Component/Home/Home';
 import './App.css';
-import Navigation from './Component/Navigation/Navigation';
+
 
 function App() {
   return (
     <div>
       <Router>
-        <Navigation></Navigation>
         <Switch>
-          <Route>
-
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="/home">
+            <Home></Home>
           </Route>
         </Switch>
       </Router>
