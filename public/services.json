@@ -3,36 +3,42 @@
         "id":1,
         "name":"Anti stress therapy",
         "image":"https://i.ibb.co/4ZfBF8h/Anti-stress-therapy.png",
+        "doctor_name":"Henry Poling",
         "description":"Stress management is a wide spectrum of techniques and psychotherapies aimed at controlling a person's level of stress, especially chronic stress, usually for the purpose of and for the motive of improving everyday functioning. Stress produces numerous physical and mental symptoms which vary according to each individual's situational factors."
     },
     {
         "id":2,
         "name":"Couple Therapy",
         "image":"https://i.ibb.co/y4bCkqf/Couple-therapy.png",
+        "doctor_name":"Smith Jordan",
         "description":"A viable solution to the problem and setting these relationships back on track may be to reorient the individuals' perceptions and emotions - how one looks at or responds to situations and feels about them.These can be explored collaboratively and discussed openly. The core values they comprise can then be understood and respected or changed when no longer appropriate. "
     },
     {
         "id":3,
         "name":"Children Therapy",
         "image":"https://i.ibb.co/7NrjJsm/children-therapy.png",
+        "doctor_name":"Michel Collin",
         "description":"This approach is meant to assist parents whom have children ages 2–7 years old who are prone to disruptive behaviors and emotional difficulties.[16] Parent-Child therapy utilizing two stages, each possessing their own goals and characteristics to create this approach.Parent-Directed interaction (PDI), the second phase, seeks to decrease the original disruptive behaviors exhibited by the child."
     },
     {
         "id":4,
         "name":"Depression Therapy",
         "image":"https://i.ibb.co/bX340sf/depression-therapy.png",
+        "doctor_name":"Mark Schultz",
         "description":"Those with major depressive disorder are typically treated with psychotherapy and antidepressant medication.[1] Medication appears to be effective, but the effect may only be significant in the most severely depressed.Hospitalization may be necessary in cases with associated self-neglect or a significant risk of harm to self or others."
     },
     {
         "id":5,
         "name":"Individual Therapy",
         "image":"https://i.ibb.co/fpV3nH2/individual-therapy.png",
+        "doctor_name":"Stephen Warner",
         "description":"Individual therapy is a form of therapy in which the client is treated on a one-on-one basis with a therapist. The most popular form of therapy, individual therapy may encompass many different treatment styles including psychoanalysis and cognitive-behavioral therapy.Individual therapy allows the therapist and client to focus on each other, building a rapport and working together to solve the client's issue."
     },
     {
         "id":6,
         "name":"Wake Therapy",
         "image":"https://i.ibb.co/h2YmwzX/wake-threrapy.png",
+        "doctor_name":"Adam Smith",
         "description":"Wake therapy was first popularized in 1966 and 1971 following articles by Schultz and by Plugs and Tolled describing striking symptom relief in individuals who had depression after 1 night of total sleep deprivation. Wake therapy can involve partial sleep deprivation in which an individual stays up for more than 24 consecutive hours. During total sleep deprivation spanning a normal awakening time until the evening after the deprivation."
     }
     
