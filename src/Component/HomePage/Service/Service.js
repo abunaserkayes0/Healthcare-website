@@ -3,7 +3,6 @@ import { Card, Col,Button } from 'react-bootstrap';
 import './Service.css';
 
 const Service = ({ service }) => {
-    console.log(service);
     const{name,image,description}=service;
     return (
         <>
