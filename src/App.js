@@ -2,7 +2,7 @@ import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Component/HomePage/Home/Home';
 import './App.css';
-
+import ServiceDetails from './Component/HomePage/ServiceDetails/ServiceDetails';
 
 
 function App() {
@@ -15,6 +15,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home></Home>
+          </Route>
+          <Route path="/service/:id">
+            <ServiceDetails></ServiceDetails>
           </Route>
         </Switch>
       </Router>
