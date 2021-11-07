@@ -1,8 +1,10 @@
 import React from 'react';
 import { Form,Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useAuth from '../../Hooks/useAuth';
 import './Login.css'
 const Login = () => {
+   const{signInWithGoogle}=useAuth();
     return (
         <div>
             <Form className="w-25 mx-auto bg-info rounded-3 p-5 my-4">
@@ -20,6 +22,7 @@ const Login = () => {
                 <Button variant="primary" type="submit">
                     LogIn
                 </Button>
+                <Button onClick={signInWithGoogle} className="btn btn-primary mx-3">Google</Button>
             </Form>
         </div>
     );
