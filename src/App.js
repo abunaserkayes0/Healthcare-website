@@ -8,6 +8,8 @@ import Frequent from './Component/Frequent/Frequent';
 import Instruments from './Component/Instruments/Instruments';
 import NotFoundPage from './Component/NotFoundPage/NotFoundPage';
 import Footer from './Component/Footer/Footer';
+import Login from './Component/Login/Login';
+import Register from './Component/Register/Register';
 
 
 function App() {
@@ -30,6 +32,12 @@ function App() {
           </Route>
           <Route path="/instruments">
             <Instruments></Instruments>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
           </Route>
           <Route path="*">
             <NotFoundPage></NotFoundPage>
