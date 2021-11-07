@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar,Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import './Navigation.css';
@@ -16,7 +16,8 @@ const Navigation = () => {
                         <Nav>
                             <Nav.Link as={HashLink}  to="/home">Home</Nav.Link>
                             <Nav.Link as={HashLink}  to="/frequent">Frequent</Nav.Link>
-                            <Nav.Link as={HashLink}  to="/Instruments">Instruments</Nav.Link>
+                            <Nav.Link as={HashLink} to="/Instruments">Instruments</Nav.Link>
+                            <Button className="btn btn-light">Login</Button>
                         </Nav>
                     <Navbar.Text>
                         Signed in as: Mark Otto
