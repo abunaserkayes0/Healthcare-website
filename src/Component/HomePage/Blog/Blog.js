@@ -17,7 +17,7 @@ const Blog = () => {
                 <div className="col-md-4">
                     <div>
                         <div>
-                        <img src="https://i.ibb.co/Qn4BqHK/blog1.jpg" alt="" />
+                        <img className="w-100" src="https://i.ibb.co/Qn4BqHK/blog1.jpg" alt="" />
                     </div>
                         <h3>Why primary healthCare in your life?</h3>
                         <div className="d-flex align-items-center">
@@ -31,7 +31,7 @@ const Blog = () => {
                 </div>
                 <div className="col-md-4">
                     <div>
-                        <img src="https://i.ibb.co/JCvKVwW/blog2.jpg" alt="" />
+                        <img className="w-100" src="https://i.ibb.co/JCvKVwW/blog2.jpg" alt="" />
                     </div>
                         <h3>Excepteur sint occaecat cupidatat non proident!</h3>
                         <div className="d-flex align-items-center">
@@ -44,7 +44,7 @@ const Blog = () => {
                 </div>
                 <div className="col-md-4">
                     <div>
-                        <img src="https://i.ibb.co/426SXFX/blog3.jpg" alt="" />
+                        <img className="w-100" src="https://i.ibb.co/426SXFX/blog3.jpg" alt="" />
                     </div>
                         <h3>Our Definitive Guide to Cold and Flu</h3>
                         <div className="d-flex align-items-center">

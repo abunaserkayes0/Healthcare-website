@@ -13,6 +13,10 @@ const Instruments = () => {
     return (
         <div className="my-5">
             <Container>
+                <div className="text-center my-4">
+                            <h2 className="fw-bold">Instrument</h2>
+                            <p>Instrument is the most useful thing in hospital because it's short description below .</p>
+                </div>
                 <Row md={3} xs={1} className="g-4">
                     {instruments.map(instrument=><Instrument key={instrument.id} instrument={instrument}></Instrument>)}
                 </Row>
