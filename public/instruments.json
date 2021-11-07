@@ -1,0 +1,64 @@
+[
+    {
+        "id":1,
+        "name":"Digital Stethoscope",
+        "price":"$23",
+        "image":"https://i.ibb.co/JnnPvzZ/1.png"
+    },
+    {
+        "id":2,
+        "name":"Control Therapy",
+        "price":"$32",
+        "image":"https://i.ibb.co/Hdqfssp/2.png"
+    },
+    {
+        "id":3,
+        "name":"Ulcer Checker",
+        "price":"$76",
+        "image":"https://i.ibb.co/zJYdCXS/3.png"
+    },
+    {
+        "id":4,
+        "name":"Mount Screamer",
+        "price":"$43",
+        "image":"https://i.ibb.co/HNCFqy6/4.png"
+    },
+    {
+        "id":5,
+        "name":"Blue Hand Gloves",
+        "price":"$87",
+        "image":"https://i.ibb.co/rZsGzKT/5.png"
+    },
+    {
+        "id":6,
+        "name":"Thermometer Gun",
+        "price":"$12",
+        "image":"https://i.ibb.co/RCZwTC4/6.png"
+    },
+    {
+        "id":7,
+        "name":"Digital Stethoscope",
+        "price":"$96",
+        "image":"https://i.ibb.co/K9ps33Q/7.png"
+    },
+    {
+        "id":8,
+        "name":"Thermometer Gun",
+        "price":"$19",
+        "image":"https://i.ibb.co/8Xz2DCV/8.png"
+    },
+    {
+        "id":9,
+        "name":"Cosmetic Containers",
+        "price":"$78",
+        "image":"https://i.ibb.co/sqFQR7Z/9.png"
+    },
+    {
+        "id":10,
+        "name":"Blue Hand Gloves",
+        "price":"$90",
+        "image":"https://i.ibb.co/GnxCy4D/10.png"
+    }
+    
+]
+

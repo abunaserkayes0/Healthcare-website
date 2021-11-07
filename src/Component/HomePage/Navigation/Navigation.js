@@ -16,6 +16,7 @@ const Navigation = () => {
                         <Nav>
                             <Nav.Link as={HashLink}  to="/home">Home</Nav.Link>
                             <Nav.Link as={HashLink}  to="/frequent">Frequent</Nav.Link>
+                            <Nav.Link as={HashLink}  to="/Instruments">Instruments</Nav.Link>
                         </Nav>
                     <Navbar.Text>
                         Signed in as: Mark Otto

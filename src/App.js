@@ -5,6 +5,8 @@ import './App.css';
 import ServiceDetails from './Component/HomePage/ServiceDetails/ServiceDetails';
 import Navigation from './Component/HomePage/Navigation/Navigation';
 import Frequent from './Component/Frequent/Frequent';
+import Instruments from './Component/Instruments/Instruments';
+import NotFoundPage from './Component/NotFoundPage/NotFoundPage';
 
 
 function App() {
@@ -25,8 +27,11 @@ function App() {
           <Route path="/frequent">
             <Frequent></Frequent>
           </Route>
+          <Route path="/instruments">
+            <Instruments></Instruments>
+          </Route>
           <Route path="*">
-            
+            <NotFoundPage></NotFoundPage>
           </Route>
         </Switch>
       </Router>
