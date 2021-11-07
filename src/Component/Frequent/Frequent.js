@@ -1,16 +1,17 @@
 import React from 'react';
-import { Accordion, Container, Row } from 'react-bootstrap';
+import { Accordion, Card, Col, Container, Row,Button } from 'react-bootstrap';
+import Rating from 'react-rating';
 import './Frequent.css';
 
 const Frequent = () => {
     return (
         <div>
             <Container>
-                <div className="text-center my-4">
-                    <h2 className="fw-bold">Any Question with Frequent section?</h2>
-                    <p>Have you ever been watching a live sporting event when an athlete suddenly left the game due to injury? Of course you have.</p>
-                </div>
                 <Row>
+                    <div className="text-center my-4">
+                        <h2 className="fw-bold">Any Question with Frequent section?</h2>
+                        <p>Have you ever been watching a live sporting event when an athlete suddenly left the game due to injury? Of course you have.</p>
+                    </div>
                     <div className="col-lg-6">
                     <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
@@ -47,9 +48,64 @@ const Frequent = () => {
                     </div>
                     <div className="col-lg-6">
                         <div>
-                            <img className="w-100 rounded-3 py-3" src="https://i.ibb.co/TYBDVvw/female-doctor-with-stethoscope-pointing-clipboard-white-background-1.jpg" alt="" />
+                            <img className="w-100 py-3" src="https://i.ibb.co/TYBDVvw/female-doctor-with-stethoscope-pointing-clipboard-white-background-1.jpg" alt="" />
                         </div>
                     </div>
+                </Row>
+                <div className="text-center my-4">
+                        <h2 className="fw-bold">Testimonial</h2>
+                        <p></p>
+                </div>
+                <Row md={3} xs={1} className="g-4">
+                    <Col>
+                        <Card>
+                            <Card.Img variant="top" src="https://i.ibb.co/rwqQL6H/skyscraper-view-city-leader-window-frame.png" />
+                            <Card.Body>
+                            <Card.Title className="fw-bold">Michel Stock</Card.Title>
+                            <Card.Text className="fw-light">
+                            “People who laugh actually live longer than those who don’t laugh. Few persons realize that health actually varies according to the amount of laughter.”
+                            </Card.Text>
+                            </Card.Body>
+                            <Rating
+                            emptySymbol="far fa-star fa-2x"
+                            fullSymbol="fas fa-star fa-2x"
+                            />
+                            <Button className="btn btn-danger my-3">See More</Button>
+                        </Card>
+                    </Col>
+                    <Col>
+                        <Card>
+                            <Card.Img variant="top" src="https://i.ibb.co/2jp7ZsQ/shipping-businessman-management-occupation-industrial.png" />
+                            <Card.Body>
+                            <Card.Title className="fw-bold">Clark Hegumen</Card.Title>
+                            <Card.Text className="fw-light">
+                            “With every pill we have prescribed for us we should also be given a creative prayer, a suggested way to correct our destructive patterns of thought.”
+                            </Card.Text>
+                            </Card.Body>
+                            <Rating
+                            emptySymbol="far fa-star fa-2x"
+                            fullSymbol="fas fa-star fa-2x"
+                            />
+                            <Button className="btn btn-danger my-3">See More</Button>
+                        </Card>
+                    </Col>
+                    <Col>
+                        <Card>
+                            <Card.Img variant="top" src="https://i.ibb.co/f1ZxSkc/man-black-hair-smart-shipping-manager.png" />
+                            <Card.Body>
+                            <Card.Title className="fw-bold">Steven Mark</Card.Title>
+                            <Card.Text className="fw-light">
+                            “Health is a state of complete harmony of the body, mind and spirit.  When one is free from physical disabilities and mental distractions, the gates of the soul open.”
+                            </Card.Text>
+                            </Card.Body>
+                            <Rating
+                            emptySymbol="far fa-star fa-2x"
+                            fullSymbol="fas fa-star fa-2x"
+                            />
+                            <Button className="btn btn-danger my-3">See More</Button>
+                        </Card>
+                    </Col>
+                    
                 </Row>
             </Container>   
         </div>
@@ -57,3 +113,8 @@ const Frequent = () => {
 };
 
 export default Frequent;
+
+
+/* 
+
+ */
