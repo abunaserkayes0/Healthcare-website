@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import './Navigation.css';
 const Navigation = () => {
@@ -7,7 +8,9 @@ const Navigation = () => {
         <>
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
                 <Container>
-                    <Navbar.Brand className="fw-bold">Special Hospital</Navbar.Brand>
+                    <Link className="text-decoration-none" to="/home">
+                         <Navbar.Brand className="fw-bold">Special Hospital</Navbar.Brand>   
+                    </Link>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end text-center">
                         <Nav>

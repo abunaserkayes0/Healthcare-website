@@ -56,7 +56,7 @@ const Frequent = () => {
                         <h2 className="fw-bold">Testimonial</h2>
                         <p></p>
                 </div>
-                <Row md={3} xs={1} className="g-4">
+                <Row md={3} xs={1} className="text-center g-4">
                     <Col>
                         <Card>
                             <Card.Img variant="top" src="https://i.ibb.co/rwqQL6H/skyscraper-view-city-leader-window-frame.png" />
