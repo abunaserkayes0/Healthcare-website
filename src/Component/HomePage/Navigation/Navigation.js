@@ -11,8 +11,8 @@ const Navigation = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end text-center">
                         <Nav>
-                            <Nav.Link as={HashLink} to="/home">Home</Nav.Link>
-                            <Nav.Link as={HashLink} to="/about">About</Nav.Link>
+                            <Nav.Link as={HashLink}  to="/home">Home</Nav.Link>
+                            <Nav.Link as={HashLink}  to="/frequent">Frequent</Nav.Link>
                         </Nav>
                     <Navbar.Text>
                         Signed in as: Mark Otto

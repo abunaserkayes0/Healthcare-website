@@ -18,7 +18,7 @@ const ServiceDetails = () => {
             const matchedService = serviceDetails.find(serviceDetail =>serviceDetail.id === parseInt(id))
             setSingleService(matchedService); 
         }
-    }, [serviceDetails])
+    }, [serviceDetails,id])
     const {name,image,description,doctor_name}=singleService;
     return (
         <div>
@@ -33,7 +33,7 @@ const ServiceDetails = () => {
                                 <Card.Title className="fw-bold">{name}</Card.Title>
                                 <Card.Text>{description}</Card.Text>
                             </Card.Body>
-                            <Link to="/home"><Button className="my-3">Go Back</Button></Link>
+                            <Link to="/home"><Button className="btn btn-dark my-3">Go Back</Button></Link>
                         </Card>
                     </Col>
                 </Row>
