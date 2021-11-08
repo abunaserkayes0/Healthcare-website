@@ -11,6 +11,7 @@ import Footer from './Component/Footer/Footer';
 import Login from './Component/Login/Login';
 import Register from './Component/Register/Register';
 import AuthProvider from './AuthProvider/AuthProvider';
+import PrivetRoute from './PrivetRoute/PrivetRoute';
 
 
 function App() {
@@ -26,15 +27,15 @@ function App() {
               <Route path="/home">
                 <Home></Home>
               </Route>
-              <Route path="/service/:id">
+              <PrivetRoute path="/service/:id">
                 <ServiceDetails></ServiceDetails>
-              </Route>
-              <Route path="/frequent">
+              </PrivetRoute>
+              <PrivetRoute path="/frequent">
                 <Frequent></Frequent>
-              </Route>
-              <Route path="/instruments">
+              </PrivetRoute>
+              <PrivetRoute path="/instruments">
                 <Instruments></Instruments>
-              </Route>
+              </PrivetRoute>
               <Route path="/login">
                 <Login></Login>
               </Route>
