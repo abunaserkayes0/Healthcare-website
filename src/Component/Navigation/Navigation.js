@@ -27,7 +27,7 @@ const Navigation = () => {
                         </Nav>
                     <Navbar.Text>
                             Sign In:{user?.displayName}
-                            <img className="profile-image" src={user?.photoURL} alt=""/>
+                            {user.displayName&& <img className="profile-image" src={user?.photoURL} alt=""/>}
                     </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>
