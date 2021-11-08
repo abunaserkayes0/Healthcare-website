@@ -4,7 +4,7 @@ import { Link,useHistory,useLocation } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import './Login.css'
 const Login = () => {
-    const { setUser, signInWithGoogle, signInEmailPassword } = useAuth();
+    const { setUser, signInWithGoogle, signInEmailPassword} = useAuth();
     
     const history = useHistory();
     const location = useLocation();
@@ -28,6 +28,11 @@ const Login = () => {
             const user = credential.user;
             setUser(user);
             history.push(url)
+          }).catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode);
+            console.log(errorMessage);
           })
     }
 
@@ -37,7 +42,12 @@ const Login = () => {
             const user = result.user;
             setUser(user);
             history.push(url);
-        })
+        }).catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode);
+            console.log(errorMessage);
+          })
     }
     return (
         <div>
@@ -47,7 +57,6 @@ const Login = () => {
                     <Form.Label className="fw-bold">Email address</Form.Label>
                     <Form.Control onBlur={handelEmail} type="email" placeholder="Enter email" />
                 </Form.Group>
-
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label className="fw-bold">Password</Form.Label>
                     <Form.Control onBlur={handelPassword} type="password" placeholder="Password" />

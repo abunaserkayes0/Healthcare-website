@@ -4,7 +4,7 @@ import { Link,useHistory,useLocation } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import './Register.css';
 const Register = () => {
-   const{createEmailPassword,setUser,updateUser} =useAuth();
+   const{createEmailPassword,setUser,updateUser,signInWithGoogle} =useAuth();
 
    const history = useHistory();
    const location=useLocation()
@@ -33,6 +33,24 @@ const Register = () => {
             updateUser(name);
             setUser(user);
             history.push(url)
+        }).catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode);
+            console.log(errorMessage);
+          })
+    }
+    const handelGoogleSignIn = () => {
+        signInWithGoogle()
+        .then(result => {
+            const user = result.user;
+            setUser(user);
+            history.push(url);
+        }).catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode);
+            console.log(errorMessage);
           })
     }
     return (
@@ -47,7 +65,6 @@ const Register = () => {
                     <Form.Label className="fw-bold">Email address</Form.Label>
                     <Form.Control onBlur={handelEmail} type="email" placeholder="Enter email" required/>
                 </Form.Group>
-
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label className="fw-bold">Password</Form.Label>
                     <Form.Control onBlur={handelPassword} type="password" placeholder="Password" required/>
@@ -56,6 +73,7 @@ const Register = () => {
                 <Button variant="primary" type="submit">
                     SignUp
                 </Button>
+                <Button onClick={handelGoogleSignIn} className="btn btn-primary mx-3">Google</Button>
             </Form>
         </div>
     );

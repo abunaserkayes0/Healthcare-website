@@ -37,7 +37,7 @@ const useFirebase = () => {
           }).then(() => {
               const userName = { ...user, displayName: name };
               setUser(userName);
-          })
+          }).catch(error=>setError(error.message))
     }
     const logOut = () => {
         signOut(auth)
@@ -50,7 +50,6 @@ const useFirebase = () => {
         signInWithGoogle,
         setUser,
         logOut,
-        error,
         createEmailPassword,
         signInEmailPassword,
         updateUser
