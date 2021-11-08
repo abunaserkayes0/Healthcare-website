@@ -6,7 +6,6 @@ initializationAuthentication();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
-    const[error,setError] = useState('');
 
     const auth = getAuth();
     const googleProvider =new GoogleAuthProvider();
@@ -37,13 +36,13 @@ const useFirebase = () => {
           }).then(() => {
               const userName = { ...user, displayName: name };
               setUser(userName);
-          }).catch(error=>setError(error.message))
+          }).catch(error=>console.log(error.message))
     }
     const logOut = () => {
         signOut(auth)
             .then(() => {
                 setUser({});
-        }).catch(error=>setError(error.message))
+        }).catch(error=>console.log(error.message))
     }
     return {
         user,

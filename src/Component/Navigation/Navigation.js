@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../Hooks/useAuth';
 import './Navigation.css';
 const Navigation = () => {
-    const { user,logOut} = useAuth();
+    const { user, logOut } = useAuth();
     return (
         <>
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
@@ -26,7 +26,8 @@ const Navigation = () => {
                             }
                         </Nav>
                     <Navbar.Text>
-                        Signed in as:{user?.displayName}
+                            Sign In:{user?.displayName}
+                            <img className="profile-image" src={user?.photoURL} alt=""/>
                     </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>
